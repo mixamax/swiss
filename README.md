@@ -2,4 +2,4 @@
 
 ## Тестовое
 
-## deploy: https://
+## deploy: https://swiss-gamma.vercel.app/
