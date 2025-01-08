@@ -1,0 +1,33 @@
+.sort-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  width: 0.563rem;
+  height: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0.188rem;
+}
+
+.sort-btn__item {
+  width: 0.5rem;
+  height: 0.313rem;
+  background-color: var(--color-faint-w-line);
+}
+
+.sort-btn__item__up {
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.sort-btn__item__down {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.sort-btn__item__active {
+  background-color: var(--color-accent-1-s);
+}
+
+

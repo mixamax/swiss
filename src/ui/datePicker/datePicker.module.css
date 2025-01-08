@@ -1,0 +1,52 @@
+.date-picker {
+  display: flex;
+  align-items: center;
+  padding-left: 0.875rem;
+  border-radius: 1rem;
+  background-color: var(--color-faint-w);
+  width: 17.875rem;
+  justify-content: space-between;
+}
+
+.date-picker__icon-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.date-picker__input {
+  margin-left: 0.625rem;
+  height: 1.125rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: var(--color-base-sl);
+  font-weight: 500;
+  width: 10rem;
+}
+.date-picker__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0.125rem;
+}
+
+.date-picker__input-title {
+  font-size: 0.5rem;
+  line-height: 0.625rem;
+  color: var(--color-base-sl);
+  margin-left: 0.75rem;
+}
+
+.date-picker__input-wrapper:has(.date-picker__input:placeholder-shown)
+  .date-picker__input-title {
+  display: none;
+}
+
+.date-picker__error {
+  background-color: var(--color-critic-wl);
+}
+
+.date-picker__input__error::placeholder {
+  color: var(--color-critic-s);
+}

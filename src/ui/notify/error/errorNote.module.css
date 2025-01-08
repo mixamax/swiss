@@ -1,0 +1,36 @@
+.error-note {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.error-note__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.875rem;
+  background-color: var(--color-base-w);
+  border-radius: 1.25rem;
+  width: 35.93rem;
+  height: 21.125rem;
+  padding: 1.875rem;
+}
+
+.error-note__text {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--color-base-s);
+  margin-top: -0.625rem;
+}
+
+.error-note__icon {
+  height: 10rem;
+}

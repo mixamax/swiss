@@ -1,0 +1,47 @@
+@import "./normalize.css";
+
+:root {
+  font-family: Montserrat, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-base-s);
+
+  --color-base-w: #ffffff;
+  --color-base-s: #42474d;
+  --color-base-sl: #828d99;
+
+  --color-faint-w: #f2f4f7;
+  --color-faint-w-line: #dae3f1;
+  --color-faint-wd: #e9edf5;
+  --color-faint-s2-back: #c3d3e5;
+
+  --color-accent-1-s: #4da2d6;
+  --color-accent-2-s: #5ccc81;
+  --color-accent-2-wl: #e5ffe5;
+  --color-deep-green: #47b26b;
+
+  --color-critic-s: #ff4a33;
+  --color-critic-wl: #ffe9e5;
+  --color-critic-sd: #e5432e;
+
+  --font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html{
+    font-size: clamp(12px, calc(100vw * 16 / 1920 ), 16px);
+}

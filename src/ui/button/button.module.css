@@ -1,0 +1,61 @@
+.button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.625rem;
+  border-radius: 1rem;
+  height: 2.75rem;
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+    scale: 1.01;
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+    scale: 0.99;
+  }
+}
+
+.primary {
+  background-color: var(--color-accent-1-s);
+  color: var(--color-base-w);
+}
+
+.secondary {
+  background-color: var(--color-faint-w);
+  color: var(--color-base-s);
+}
+
+.accent {
+  background-color: var(--color-accent-2-s);
+  color: var(--color-base-w);
+}
+
+.critic {
+  background-color: var(--color-critic-s);
+  color: var(--color-base-w);
+}
+
+.critic-wl {
+  background-color: var(--color-critic-wl);
+  color: var(--color-critic-sd);
+}
+
+.s {
+  width: 9.75rem;
+}
+
+.m {
+  width: 16.25rem;
+}
+
+.l {
+  width: 19.75rem;
+}

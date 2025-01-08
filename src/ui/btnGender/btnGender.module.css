@@ -1,0 +1,49 @@
+.btnGender {
+  width: 17.875rem;
+  min-width: 17.875rem;
+  height: 2.75rem;
+  border-radius: 1rem;
+  background-color: var(--color-faint-w);
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  position: relative;
+}
+
+.btnGender__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  transition: clip-path 1s ease-in-out;
+}
+
+.btnGender__item {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  padding: 0 1.5rem;
+  height: 2.75rem;
+  cursor: pointer;
+}
+
+.btnGender__item__light {
+  color: var(--color-base-w);
+}
+
+.btnGender__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-accent-1-s);
+  border-radius: 1rem;
+  transition: left 1s ease-in-out;
+}
+
+.btnGender__overlay__right {
+  left: 50%;
+}

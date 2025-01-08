@@ -1,0 +1,30 @@
+.success-note {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.success-note__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.875rem;
+  background-color: var(--color-base-w);
+  border-radius: 1.25rem;
+  width: 22.8rem;
+  height: 16.75rem;
+  padding: 1.875rem;
+}
+
+.success-note__text {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--color-base-s);
+}

@@ -1,0 +1,106 @@
+.list {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.list-item {
+  display: flex;
+  height: 4.5rem;
+  padding: 0.875rem 1.25rem;
+  align-items: center;
+  column-gap: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: var(--color-base-s);
+  border-bottom: 1px solid var(--color-faint-s2-back);
+}
+
+.list-item__new {
+  animation: item 2.5s ease-in;
+}
+
+@keyframes item {
+  0% {
+    /* opacity: 0; */
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--color-faint-s2-back);
+  }
+  100% {
+    /* opacity: 1; */
+    background-color: transparent;
+  }
+}
+
+.list-item__avatar-wrapper {
+  display: flex;
+  align-items: center;
+  flex-basis: 64.375rem;
+  column-gap: 0.625rem;
+}
+
+.list-item__avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 1rem;
+}
+
+.list-item__name {
+  min-width: 16rem;
+  flex-basis: 64rem;
+}
+
+.list-item__mail {
+  min-width: 12rem;
+  flex-basis: 12.5rem;
+  flex-shrink: 0;
+}
+
+.list-item__date,
+.list-item__role {
+  flex-basis: 8.75rem;
+  flex-shrink: 0;
+}
+
+.list-item__gender {
+  display: flex;
+  align-items: center;
+  flex-basis: 8.75rem;
+  flex-shrink: 0;
+}
+
+.list-item__gender-icon {
+  height: 1rem;
+  margin-right: 0.375rem;
+}
+
+.list-item__btns {
+  display: flex;
+  column-gap: 0.375rem;
+  flex-basis: 4.625;
+  flex-shrink: 0;
+}
+
+.list-item__btn {
+  background-color: var(--color-base-w);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.list-item__btn__edit:hover {
+  background-color: var(--color-accent-2-wl);
+}
+
+.list-item__btn__delete:hover {
+  background-color: var(--color-critic-wl);
+}

@@ -1,0 +1,63 @@
+.delete-note {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.delete-note__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.875rem;
+  background-color: var(--color-base-w);
+  border-radius: 1.25rem;
+  width: 23.93rem;
+  height: 18.125rem;
+  padding: 1.875rem;
+}
+
+.delete-note__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.625rem;
+  margin-top: -1rem;
+  width: 100%;
+}
+
+.delete-note__text {
+  font-size: 0.875rem;
+  line-height: 1.28;
+  font-weight: 500;
+  color: var(--color-base-s);
+}
+
+.delete-note__text__big {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-note__btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.delete-note__icon {
+  width: 5rem;
+}

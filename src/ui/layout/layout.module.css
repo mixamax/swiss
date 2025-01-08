@@ -1,0 +1,13 @@
+.layout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    padding: 1.25rem 1.875rem;
+    background-color: var(--color-faint-w);
+    height: 100vh;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    overflow: hidden;
+}

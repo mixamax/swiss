@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+
+  & .header-title__light {
+    color: var(--color-base-sl);
+  }
+}
