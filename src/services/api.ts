@@ -4,7 +4,6 @@ import {
   UsersDTO,
   UserDTO,
   UpdatedUserResponseDTO,
-  registerResponseDTO,
 } from "../application/dto/dto";
 import { User } from "../domain/user";
 
@@ -20,12 +19,6 @@ export const API = {
     api.get("/users", { params: { page, per_page } }),
   getUser: (id: number): Promise<AxiosResponse<UserDTO>> =>
     api.get(`/users/${id}`),
-  //   registerNewUser: (user: {
-  //     username: string;
-  //     email: string;
-  //     password: string;
-  //   }): Promise<AxiosResponse<registerResponseDTO>> =>
-  //     api.post("/register", user),
   removeUser: (id: User["id"]) => api.delete(`/users/${id}`),
   updateUser: (user: UserDTO): Promise<AxiosResponse<UpdatedUserResponseDTO>> =>
     api.patch(`/users/${user.id}`, {
@@ -34,7 +27,6 @@ export const API = {
       last_name: user.last_name,
       avatar: user.avatar,
     }),
-
   registerNewUser: (user: {
     name: string;
     job: string;
